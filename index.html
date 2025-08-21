@@ -1,100 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Diksha's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header><h1><b>MY PORTFOLIO</b></h1></header>
-    <br/>
-    <big>Diksha</big>
-        <br/>
-    <big>Software Engineer</big>
-    <a href="https://google.com" img src="/image.png"height="100",width="100"></a>
-    <br/>
-    <br/>
-    <b>Programming Languages:</b>
-    <ul>
-        <li>C/C++</li>
+<body class="bg-gray-100 text-gray-900 font-sans">
+
+  <!-- Navigation Bar -->
+  <nav class="bg-white shadow-md sticky top-0 z-10">
+    <div class="max-w-6xl mx-auto px-4 py-4">
+      <ul class="flex space-x-6 justify-center font-medium">
+        <li><a href="#profile" class="hover:text-blue-600">Profile</a></li>
+        <li><a href="#skills" class="hover:text-blue-600">Skills</a></li>
+        <li><a href="#education" class="hover:text-blue-600">Education</a></li>
+        <li><a href="#projects" class="hover:text-blue-600">Projects</a></li>
+        <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="bg-blue-50 py-10 text-center shadow-md">
+    <h1 class="text-4xl font-bold">Diksha</h1>
+    <p class="mt-2">Email: <a href="mailto:dikshakhichar100@gmail.com" class="text-blue-600">dikshakhichar100@gmail.com</a> | Phone: 81684-58881</p>
+    <p>Location: Hisar, Haryana</p>
+    <p class="mt-2">
+      <a href="https://www.linkedin.com/in/diksha-khichar-aa927728a" target="_blank" class="text-blue-600 underline">LinkedIn</a> |
+      <a href="https://github.com/your-github-username" target="_blank" class="text-blue-600 underline">GitHub</a> |
+      <a href="resume.pdf" download class="text-blue-600 underline">Download Resume (PDF)</a>
+    </p>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-10 space-y-12">
+
+    <!-- Profile Section -->
+    <section id="profile">
+      <h2 class="text-2xl font-semibold mb-2 border-b border-gray-300 pb-1">Profile</h2>
+      <p>
+        A highly motivated and enthusiastic second-year Computer Science Engineering student with a strong foundation in programming, data structures, and algorithms. Passionate about technology and innovation, with hands-on experience in coding and team-based projects. Eager to learn and apply new skills to contribute effectively to dynamic and challenging environments.
+      </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2 class="text-2xl font-semibold mb-2 border-b border-gray-300 pb-1">Skills</h2>
+      <ul class="grid grid-cols-2 md:grid-cols-3 gap-2 list-disc pl-6">
         <li>Python</li>
-        <li>Java</li>
-        <li>Html</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>Data Structures</li>
+        <li>Algorithms</li>
+        <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>
-    </ul>
-    
-    <br/>
-    <br/>
-    <table>
-        <caption><b>Academic_Information</b></caption>
-        <tr>
-            <th>
-                Class
-            </th>
-            <th>
-                School/Institute Name
-            </th>
-            <th>
-                Percentage
-            </th>
-            <th>
-                Passing Year
-            </th>
-        </tr>
-        <tr>
-            <td>
-                10th
-            </td>
-            <td>
-                MAP School, Fatehabad
-            </td>
-            <td>
-                92%
-            </td>
-            <td>
-                2021
-            </td>
-        </tr>
-        <tr>
-            <td>
-                12th
-            </td>
-            <td>
-                SRMPS,Hisar
-            </td>
-            <td>
-                92.4%
-            </td>
-            <td>
-                2023
-            </td>
-        </tr>
-        <tr>
-            <td>
-                B.E.-CSE 
-            </td>
-            <td>
-                CU
-            </td>
-            <td>
-                8.49
-            </td>
-            <td>
-                2027
-            </td>
-        </tr>
-        
+      </ul>
+    </section>
 
-    </table>
-    </body>
-    <footer>
-        <br/>
-        <pre><big>Contact me at:</big>
-phn no:398940cndnd
-linkedin id:<a href="https://www.linkedin.com/in/diksha-khichar-aa927728a" target="_main"> click here</a>
-    </pre>
-</footer>
-    
+    <!-- Education Section -->
+    <section id="education">
+      <h2 class="text-2xl font-semibold mb-2 border-b border-gray-300 pb-1">Education</h2>
+      <ul class="space-y-4">
+        <li>
+          <strong>Bachelors in Computer Science Engineering</strong><br/>
+          Chandigarh University, Mohali (2023 – Present)<br/>
+          CGPA: 8.40
+        </li>
+        <li>
+          <strong>Intermediate (CBSE)</strong><br/>
+          SRM Public School, Hisar (2023)<br/>
+          Percentage: 92.4%
+        </li>
+        <li>
+          <strong>Matriculation (CBSE)</strong><br/>
+          MA Public School, Hisar (2021)<br/>
+          Percentage: 92.6%
+        </li>
+      </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 class="text-2xl font-semibold mb-2 border-b border-gray-300 pb-1">Projects</h2>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold">Flood Detection Using IoT (2024)</h3>
+        <ul class="list-disc pl-6">
+          <li>Developed an IoT-based flood detection system using sensors and microcontrollers to monitor water levels in real-time and transmit data to a cloud platform.</li>
+          <li>Implemented alert mechanism via email and SMS for timely warnings.</li>
+        </ul>
+      </div>
+
+      <div class="mb-6">
+        <h3 class="text-xl font-semibold">Car Over Speeding Detection (2024)</h3>
+        <ul class="list-disc pl-6">
+          <li>Designed and implemented a car over speeding detection system using Python and MySQL.</li>
+          <li>Added safety alerts for over-speed events.</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-xl font-semibold">Speech Recognition System (2024)</h3>
+        <ul class="list-disc pl-6">
+          <li>Created a speech-to-text model using Python and Google Web Speech API.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="text-2xl font-semibold mb-2 border-b border-gray-300 pb-1">Contact</h2>
+      <p>Email: <a href="mailto:dikshakhichar100@gmail.com" class="text-blue-600">dikshakhichar100@gmail.com</a></p>
+      <p>Phone: 81684-58881</p>
+      <p>Location: Hisar, Haryana</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/diksha-khichar-aa927728a" target="_blank" class="text-blue-600 underline">diksha-khichar</a></p>
+      <p>GitHub: <a href="https://github.com/your-github-username" target="_blank" class="text-blue-600 underline">your-github-username</a></p>
+      <p>Resume: <a href="resume.pdf" download class="text-blue-600 underline">Click here to download</a></p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t mt-10 py-4 text-center text-sm text-gray-600">
+    <p>&copy; 2025 Diksha | All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
